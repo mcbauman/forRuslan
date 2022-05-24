@@ -1,0 +1,36 @@
+### User REGISTRATION
+POST http://localhost:7000/api/v1/users/register
+Content-Type: application/json
+
+{
+    "email":"Anothername@provider.de",
+    "password":"123456789"
+}
+### User LOGIN
+POST http://localhost:7000/api/v1/users/login
+Content-Type: application/json
+
+{
+    "email":"Anothername@provider.de",
+    "password":"123456789"
+}
+
+### Post CREATE
+POST http://localhost:7000/api/v1/messages
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjhiNWE3YzJmMGJjNjdhMTg0MjIyOTMiLCJpYXQiOjE2NTMzMDU2MTh9.lQ2WwYXqaboJ1NoZeGAVuIv8ZO56Rcyfze1ndWDhtsM
+
+{
+    "title":"The Title is Title",
+    "content":"Here is the questions text",
+    "author":"theUserId"
+}
+### Post GETALL
+GET http://localhost:8000/api/v1/messages
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjhiNWE3YzJmMGJjNjdhMTg0MjIyOTMiLCJpYXQiOjE2NTMzMDU2MTh9.lQ2WwYXqaboJ1NoZeGAVuIv8ZO56Rcyfze1ndWDhtsM
+
+### DELETE Message
+DELETE http://localhost:8000/api/v1/messages/628b959b21e83ff2a811ad10
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjhiNWE3YzJmMGJjNjdhMTg0MjIyOTMiLCJpYXQiOjE2NTMzMDU2MTh9.lQ2WwYXqaboJ1NoZeGAVuIv8ZO56Rcyfze1ndWDhtsM
